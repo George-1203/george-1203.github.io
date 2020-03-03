@@ -1,0 +1,123 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*top-menu*/
+
+.top-menu {
+    width: 960px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.top-menu:before {
+    width: 100%;
+    content: '';
+    display: block;
+    height: 50px;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+/*main-menu*/
+
+.main-menu {
+    width: 960px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.main-menu:before {
+    width: 100%;
+    content: '';
+    display: block;
+    height: 50px;
+    background: black;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 50px;
+    transition: all .4s;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    color: aliceblue;
+    display: block;
+    height: 50px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+ul li a:hover {
+    background: red;
+}
+
+
+/*drop-menu*/
+
+ul.drop-menu {
+    display: none;
+}
+
+ul.drop-menu li {
+    float: left;
+}
+
+ul.drop-menu li a {
+    display: block;
+    color: white;
+    height: 50px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 50px;
+    transition: all .4s;
+}
+
+ul li:hover ul.drop {
+    top: 50px;
+}
+
+ul.drop {
+    background: black;
+    position: absolute;
+    height: 250px;
+    width: 160px;
+    top: -260px;
+    z-index: -2;
+}
+
+ul.drop li a {
+    width: 100px;
+}
+
+
+/*media*/
+
+@media screen and (max-width: 750px) {
+    ul.drop-menu {
+        display: block;
+    }
+    .main-menu {
+        display: none;
+    }
+}
