@@ -9,7 +9,7 @@ body {
 
 .top-menu {
     background: black;
-    width: 100%;
+    width: 960px;
     height: 50px;
     margin: 0 auto;
 }
@@ -17,7 +17,7 @@ body {
 .top-menu:before {
     
     width: 100%;
-    content: '';
+    content: ' ';
     display: block;
     height: 50px;
     background: black;
@@ -32,7 +32,7 @@ body {
 /*main-menu*/
 
 .main-menu {
-    width: 960px;
+    width: 100%;
     height: 50px;
     margin: 0 auto;
 }
@@ -114,17 +114,3 @@ ul.drop li a {
 }
 
 
-/*media*/
-
-@media screen and (max-width: 768px) {
-    ul.drop-menu {
-        display: block;
-    }
-    .main-menu {
-        display: none;
-    }
-    
-    .left {
-        float: none;
-    }
-}
