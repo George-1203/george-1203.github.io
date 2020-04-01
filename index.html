@@ -13,24 +13,24 @@
 <body>
     <header>
         <div class="top-menu">
+            <a name="top-menu"></a>
             <nav>
                 <div class="main-menu">
                     <ul>
                         <li><a href="#">обо мне</a></li>
                         <li><a href="#portfolio">портфолио</a></li>
-                        <li><a href="#">резюме</a></li>
-                        <li><a href="#">образование</a></li>
-                        <li><a href="#">контакты</a></li>
+                        <li><a href="#education">Курсы</a></li>
+                        <li><a href="#resume">резюме</a></li>
+                        <li><a href="#contacts">контакты</a></li>
                     </ul>
                 </div>
                 <ul class="drop-menu">
                     <li><a href="">Обо мне</a>
                         <ul class="drop">
                             <li><a href="#portfolio">Портфолио</a></li>
-                            <li><a href="#">Навыки</a></li>
-                            <li><a href="#">резюме</a></li>
-                            <li><a href="#">Образование</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#education">Курсы</a></li>
+                            <li><a href="#resume">резюме</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -39,8 +39,7 @@
     </header>
 </body>
 <div class="about-me clearfix">
-    <a name="about-me"></a>
-    <div class="left"> <img class="my-photo" src="https://s00.yaplakal.com/pics/pics_original/7/1/3/2974317.jpg"> </div>
+    <div class="left"> <img class="my-photo" src="./images/myphoto.jpg"> </div>
     <div class="my-info">
         <h1>Обо мне</h1>
         <p>Прошел обучение в компании prog.kiev.ua по курсу Front-End. На данный момент в поисках работы своей мечты на позицию Junior Front-End Developer. Постоянно развиваю навыки по верстке сайтов и написанию скриптов на JS. Хочу найти работу с возможностью и дальше развиваться и узнавать что-то новое в этой области. Быстро увлекаюсь работой у которой виден результат, поэтому и выбрал веб-разработку. Легко общаюсь с разными типами людей и быстро обучаюсь.</p>
@@ -61,41 +60,86 @@
     </div>
 </div>
 <div class="portfolio">
-    <a name="portfolio"></a>
-    <h1>Портфолио</h1>
-    <p>На данный момент в портфолио вы можете увидеть результаты моей работы по HTML/CSS. На данный момент есть только резюме.</p>
+    <div class="port-text">
+        <a name="portfolio"></a>
+        <h1>Портфолио</h1>
+        <p>На данный момент в портфолио вы можете увидеть результаты моей работы по HTML/CSS. На данный момент есть только резюме.</p>
+    </div>
+    <div class="product">
+        <a class="sites" href="./first_site/index.html"><img src="./images/site1.jpg"></a>
+        <a class="sites" href="./first_site/index.html"><img src="./images/site1.jpg"></a>
+        <a class="sites" href="./first_site/index.html"><img src="./images/site1.jpg"></a>
+        <a class="sites" href="./first_site/index.html"><img src="./images/site1.jpg"></a>
+        <a class="sites" href="./first_site/index.html"><img src="./images/site1.jpg"></a>
+        <a class="sites" href="./first_site/index.html"><img src="./images/site1.jpg"></a>
+        <a class="sites" href="./first_site/index.html"><img src="./images/site1.jpg"></a>
+    </div>
 </div>
-<div class="product"> 
-<img src="https://all-psd.ru/uploads/posts/20-06-2012/01461.jpg"> 
-<img src="https://all-psd.ru/uploads/posts/20-06-2012/01461.jpg"> 
-<img src="https://all-psd.ru/uploads/posts/20-06-2012/01461.jpg"> 
-<img src="https://all-psd.ru/uploads/posts/20-06-2012/01461.jpg"> 
-<img src="https://all-psd.ru/uploads/posts/20-06-2012/01461.jpg"> 
-<img src="https://all-psd.ru/uploads/posts/20-06-2012/01461.jpg"> 
-<img src="https://all-psd.ru/uploads/posts/20-06-2012/01461.jpg"> 
+<div class="button-up">
+    <a class="go-up" href="#top-menu"> <i class="fas fa-arrow-circle-up"></i></a>
 </div>
-
-   <div class="button-up"> 
-   <a class="go-up" href="#about-me">
-   <i class="fas fa-arrow-circle-up"></i></a> 
-   </div>
-
-   <div class="education clearfix">
-        <div class="ed-center">
-        <h1>Прошел курс</h1> 
-        </div>
+<div class="education clearfix">
+    <a name="education"></a>
+    <div class="ed-center">
+        <h1>КУРСЫ</h1> </div>
     <div class="ed-block">
+        <h1>верстка HTML/CSS</h1>
         <ol>
             <li>Основные задачи фронтенда. Инструменты разработки.</li>
             <li>Введение в HTML. Структура кода.</li>
+            <li>Основные теги работы с текстом, изображениями.</li>
+            <li>Создание веб форм.</li>
+            <li>Работа с таблицами данных.</li>
+            <li>Введение в CSS, разделение содержания и представления.</li>
+            <li>Контейнеры CSS. Подключение CSS стилей. Применение валидатора.</li>
+            <li>CSS селекторы.</li>
+            <li>Способы раскладки в CSS: от float до flexbox.</li>
+            <li>Использование SASS.</li>
+            <li>CSS-фреймворки: Bootstrap.</li>
+            <li>Media queries.</li>
+            <li>Новые спецификации HTML5 и CSS 3.</li>
+            <li>Адаптивность и оптимизация верстки.</li>
         </ol>
     </div>
     <div class="ed-block">
+        <h1>java script</h1>
         <ol>
             <li>Обзор JavaScript: история, роль, синтаксис.</li>
             <li>Базовые конструкции языка.</li>
+            <li>Примитивные типы данных, переменные, операторы. </li>
+            <li>Логические структуры. </li>
+            <li>Работа с массивами: одномерными, двумерными. </li>
+            <li>Методы и функции. </li>
+            <li>Классы и объекты. </li>
+            <li>Конструкторы и прототипы. </li>
+            <li>JavaScript в браузерах: модель W3C DOM. </li>
+            <li>Формы и регулярные выражения. </li>
+            <li>События, обработка событий. </li>
+            <li>Интерактивные интерфейсы. AJAX и обзор плагинов. </li>
+            <li>Архитектура REST. </li>
+            <li>Библиотека jQuery. </li>
+            <li>Фреймворк: Angular, ReactJS или Vue.js. </li>
+            <li>Сборка проектов: WebPack, GulpJS. </li>
         </ol>
     </div>
 </div>
+<div class="resume">
+     <a name="resume"></a>
+      <h1>Резюме</h1>
+      <p>Более детальную информацию обо мне можно узнать, скачав резюме.</p>
+      <p><a href="./images/myphoto.jpg" download><button>Скачать файл</button></a>
+
+</div>
+<div class="contacts">
+    <a name="contacts"></a>
+    <h1>Контакты</h1>
+    <p>mob: +380936159584</p>
+    <p>viber: +380936159584</p>
+    <p>emeil: kondratenko.info@gmail.com</p>
+</div>
+<div class="links"> 
+<a href="https://github.com/George-1203"><i class="fab fa-github"></i></a> 
+<a href="https://www.linkedin.com/in/george-kondratenko-123097175/"><i class="fab fa-linkedin"></i></a> 
+<a href="https://www.facebook.com/profile.php?id=100010806994567"><i class="fab fa-facebook"></i></a> </div>
 
 </html>
